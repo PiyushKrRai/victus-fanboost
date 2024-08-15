@@ -5,11 +5,11 @@ PWM1_ENABLE_STATUS=$(cat /sys/devices/platform/hp-wmi/hwmon/hwmon*/pwm1_enable)
 
 # Check the current status and toggle it
 if [[ $PWM1_ENABLE_STATUS -eq "2" ]]; then
-    echo "Disabling fan boost..."
+    echo "Enabling fan boost..."
     echo "0" | sudo tee /sys/devices/platform/hp-wmi/hwmon/hwmon*/pwm1_enable > /dev/null
     echo "Fan boost has been disabled."
 else
-    echo "Enabling fan boost..."
+    echo "Disabling fan boost..."
     echo "2" | sudo tee /sys/devices/platform/hp-wmi/hwmon/hwmon*/pwm1_enable > /dev/null
     echo "Fan boost has been enabled."
 fi
