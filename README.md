@@ -3,10 +3,10 @@ Bash script for toggling fan boost mode in certain Victus laptops.
 
 # Usage
 
-The script will automatically read the current setting of the fans and activate or deactivate the boost state accordingly. This script needs sudo privileges in order to be able to write to the fan control file. It is recommended that you give your user sudo permissinos to use `tee` on the file without requiring a password. This can be done by adding the following line to your `/etc/sudoers` file:
+The script will automatically read the current setting of the fans and activate or deactivate the boost state accordingly. This script needs sudo privileges in order to be able to write to the fan control file. It is recommended that you give your user sudo permissions to use `tee` on the file without requiring a password. This can be done by adding the following line to your `/etc/sudoers` file:
 
 ```
-username ALL=(ALL:ALL) NOPASSWD: /usr/bin/tee /sys/devices/platform/hp-wmi/hwmon/hwmon*/pwm1_enable
+<your_username> ALL=(ALL:ALL) NOPASSWD: /usr/bin/tee /sys/devices/platform/hp-wmi/hwmon/hwmon*/pwm1_enable
 ```
 
 # Compatible Devices
