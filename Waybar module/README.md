@@ -1,6 +1,8 @@
 # Victus Fanboost Waybar Module
 Waybar module for victus fanboost script.
 
+https://github.com/user-attachments/assets/256bea25-f327-4082-99a6-46ac66a81806
+
 # Usage
 
 - copy the module from the config file and place it within your waybar config 
@@ -20,3 +22,7 @@ The module is currently configured to pop open a terminal on your screen to ente
 # Compatible Devices
 
 This script has very much NOT BEEN TESTED ON ANY MACHINE OTHER THAN MINE. So far it's only confirmed to work in the Victus 15 fb-1xxx and Victus 15-fa0xxx models. Any use of this script is done AT YOUR OWN RISK and it is assumed you take responsibility for any possible hardware damage.
+
+#
+
+for update or queries regarding the waybar module please reach out to raip7172@gmail.com
